@@ -1,0 +1,57 @@
+#titleDiv{
+  width:400px;
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
+
+.spacerColumn {
+  float: left;
+  width: 16.5%;
+  padding: 5px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.instructions {
+  margin : auto;       /* block alignment center */
+  width:75%;
+  text-align: left;
+}
+
+.image {
+  height:100%;
+  max-width: 100%;
+}
+
+.button {
+  background-color: #A9A9A9;
+  border-style:solid;
+  border: 1 px solid black;
+  color: black;
+  padding: 10px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 12px;
+}
+
+.spacer{
+  padding-bottom: 100px;
+}
+
+.spacerSmall{
+  padding-bottom: 30px;
+}
+
+.input
+{
+  border-radius: 2px;
+  border: 1 px solid black;
+}

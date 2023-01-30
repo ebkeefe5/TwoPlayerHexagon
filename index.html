@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	#gameScreen {
+	  display: none;
+	}
+	</style>
+
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<title>Hexagon Game</title>
+	</head>
+	<body style="background-color:#D3D3D3">
+
+        <div id="initialScreen">
+	        <div class="center">
+	            <h1>Hexagon</h1>
+	            <button type="submit" class="button"id="newGameButton">Create New Game</button>
+	           <div><h3>OR</h3></div>
+	           <div>
+	              <input type="text" placeholder="Enter Game Code" class = "input" id="gameCodeInput"/>
+	            </div>
+	            <button type="submit" class="button" id="joinGameButton">Join Game</button>
+							<div class = "spacerSmall"></div>
+	            <div class = "instructions">
+								<p>This is a 2 player alternating turn game.
+									Red has the first move, but may not move in the center on the first turn.
+									Red wins by connecting the bottom and top of the board with an unbroken chain of red hexagons.
+									Blue wins by connecting the left and right side of the board with an unbroken chain of blue hexagons.
+									The pictures below show an example of a game where red and blue have each won, respectively.
+								</p>
+							</div>
+						<div class="row">
+							<div class = "spacerColumn"></div>
+							<div class="column">
+								<h3>Winning Red Board</h3>
+								<img src = "img/winningRedBoard.PNG" alt="An example winning red board" class = "image">
+							</div>
+							<div class="column">
+								<h3>Winning Blue Board</h3>
+								<img src = "img/winningBlueBoard.PNG" alt="An example winning blue board" class = "image">
+							</div>
+						</div>
+					</div>
+        </div>
+
+			<div class="center">
+				<div id="gameScreen">
+				<h1>Hexagon</h1>
+
+				<div><h3>Your game code is: <span id="gameCodeDisplay"></span></h3></div>
+				<button type="restart" class="button"id="restartGameButton">Restart Game</button>
+
+				<div id = "board" height="340" width="500">
+					</div>
+							<h3>You are playing as: <span id="player"></h3>
+							<h3 id = "playerTurn">Red's Move!</h3>
+						</div>
+			</div>
+		</div>
+
+		<script src=https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js></script>
+		<script type="text/javascript" src="js/client/script.js"></script>
+	</body>
+</html>
