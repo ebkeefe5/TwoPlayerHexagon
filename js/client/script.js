@@ -1,5 +1,5 @@
 //update below with address of server
-//ioClient = io('https://35.238.40.176:8080',{secure: true});
+ioClient = io('https://127.0.0.1:8080',{secure: true});
 
 ioClient.on("init", (playerNumber) => handleInit(playerNumber));
 ioClient.on("update", (gameState) => updateGameState(gameState));
